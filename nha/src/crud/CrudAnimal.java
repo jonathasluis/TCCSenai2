@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import DAO.Animal;
 import banco.Conexao;
 
-public class CrudAnimal {
+public class CrudAnimal {//
 
 	public boolean addAnimal(Animal animal) {
 		String sql = "INSERT INTO animais (datadenascimento, raca, sexo, img, destino, idfazenda, quantidade, datacompra,nomeLote)"
