@@ -295,13 +295,13 @@ public class Principal {
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setBounds(10, 590, 1054, 29);
+		lblNewLabel.setBounds(34, 590, 1054, 29);
 		frmPrincipal.getContentPane().add(lblNewLabel);
 		
 		JLabel label = new JLabel("");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
-		label.setIcon(new ImageIcon(Principal.class.getResource("/libs/logo Principal.png")));
-		label.setBounds(10, 233, 1054, 300);
+		label.setIcon(null);
+		label.setBounds(12, 231, 1054, 300);
 		frmPrincipal.getContentPane().add(label);
 		
 		foto = new JLabel("");
