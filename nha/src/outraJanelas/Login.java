@@ -212,8 +212,6 @@ public class Login {//
 				logar();	
 			}			
 		});
-		
-		Conexao.getConexao();
 	}	
 	
 	public void logar() {
@@ -230,7 +228,7 @@ public class Login {//
 		
 
 		try {
-			PreparedStatement stmt = new Conexao().getConexao().prepareStatement(sql);
+			PreparedStatement stmt = Conexao.getConexao().prepareStatement(sql);
 			stmt.setString(1, campoUsuario);
 			rs = stmt.executeQuery();
 			stmt.execute();
