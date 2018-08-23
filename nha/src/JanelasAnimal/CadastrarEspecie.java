@@ -1,14 +1,15 @@
 package JanelasAnimal;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.SystemColor;
-import java.awt.Toolkit;
 import java.awt.Window.Type;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,12 +21,9 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
 
 import banco.Conexao;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.Color;
-import javax.swing.border.BevelBorder;
 
 public class CadastrarEspecie{
 

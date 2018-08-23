@@ -228,7 +228,7 @@ public class NovaFazenda {
 				tfProprietario.setText(null);
 				taDescricao.setText(null);
 				lblImg.setHorizontalAlignment(SwingConstants.CENTER);
-				lblImg.setIcon(new ImageIcon(NovaFazenda.class.getResource("/img/128x128.png")));
+				lblImg.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/128x128.png")));
 				tfQtdAnimais.setText("0");
 				tfQtdFuncionarios.setText("0");
 				img=null;
@@ -578,7 +578,7 @@ public class NovaFazenda {
 				mI.abrirImagem(fazenda.getImg(), null, panel, lblImg, fazenda.getImg());
 			}else {
 				lblImg.setHorizontalAlignment(SwingConstants.CENTER);
-				lblImg.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/img/128x128.png")));
+				lblImg.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/128x128.png")));
 			}
 			
 		} catch (SQLException e) {

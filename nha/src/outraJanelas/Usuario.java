@@ -61,6 +61,8 @@ public class Usuario {
 	String msg;
 	String titulo;
 	
+	String nomeUsuario=null;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -235,11 +237,18 @@ public class Usuario {
 				}
 				
 				colocaDadosDAO();
-				new crudUsuarios().updUsuario(usuario);
 				
-				JOptionPane.showMessageDialog(null, "Dados atualizados com sucesso!");
-				chckbxAlterarDados.setSelected(false);
-				btnCancelar.doClick();
+				if (verificaSeTemUsuario()) {
+					new crudUsuarios().updUsuario(usuario);
+					
+					JOptionPane.showMessageDialog(null, "Dados atualizados com sucesso!");
+					chckbxAlterarDados.setSelected(false);
+					btnCancelar.doClick();
+				}else {
+					JOptionPane.showMessageDialog(null, "esse usuario ja existe", "ALERTA!", JOptionPane.WARNING_MESSAGE);
+					tfNome.requestFocus();
+					return;
+				}
 				
 			}
 		});
@@ -395,12 +404,33 @@ public class Usuario {
 		
 	}
 	
+	boolean verificaSeTemUsuario() {
+		boolean resposta=true;
+		ResultSet rs = new crudUsuarios().selectUsuarioPeloNome(usuario.getUsuario());
+		
+		try {
+			if (rs.next()) {
+				if (tfNome.getText().equalsIgnoreCase(rs.getString("usuario")) && (!tfNome.getText().equalsIgnoreCase(nomeUsuario))) {
+					resposta=false;
+				}
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return resposta;
+	}
+	
 	public void colocaDados(ResultSet resultado) {
 		try {
 			while (resultado.next()) {
 				tfNome.setText(resultado.getString("usuario"));
 				tfEmail.setText(resultado.getString("email"));
 				pfSenha.setText(resultado.getString("senha"));
+				
+				nomeUsuario = resultado.getString("usuario");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

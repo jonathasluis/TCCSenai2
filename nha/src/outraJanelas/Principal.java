@@ -300,8 +300,13 @@ public class Principal {
 		
 		JLabel label = new JLabel("");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
+
 		label.setIcon(null);
 		label.setBounds(12, 231, 1054, 300);
+
+	//a	label.setIcon(new ImageIcon(Principal.class.getResource("/libs/logo Principal.png")));
+		label.setBounds(10, 233, 1054, 300);
+
 		frmPrincipal.getContentPane().add(label);
 		
 		foto = new JLabel("");
