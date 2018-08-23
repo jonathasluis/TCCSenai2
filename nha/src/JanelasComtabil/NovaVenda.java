@@ -124,7 +124,7 @@ public class NovaVenda {
 		}//fim formatação mascara
 		
 		frmNovaVenda = new JFrame();
-		frmNovaVenda.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaVenda.class.getResource("/libs/img/32x32.png")));
+		frmNovaVenda.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaVenda.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmNovaVenda.getContentPane().setFont(new Font("Tahoma", Font.BOLD, 12));
 		frmNovaVenda.setTitle("Nova Venda");
 		frmNovaVenda.setBounds(100, 100, 1080, 720);
@@ -133,7 +133,7 @@ public class NovaVenda {
 		frmNovaVenda.setResizable(false);
 		frmNovaVenda.getContentPane().setLayout(null);
 		
-		ImageIcon icon = new ImageIcon(NovaVenda.class.getResource("/libs/img/t1.png"));
+		ImageIcon icon = new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/t1.png"));
 		icon.setImage(icon.getImage().getScaledInstance(46, 48, 100));
 		JLabel label = new JLabel("");
 		label.setBounds(1004, 6, 46, 48);
@@ -578,8 +578,8 @@ public class NovaVenda {
 		frmNovaVenda.getContentPane().add(lblSemdados);
 		
 		JLabel lblFundo = new JLabel("");
-		lblFundo.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/teste13.jpg")));
-		lblFundo.setBounds(0, -22, 1074, 670);
+		lblFundo.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/teste13.jpg")));
+		lblFundo.setBounds(0, -25, 1074, 670);
 		frmNovaVenda.getContentPane().add(lblFundo);
 		
 		menu();
@@ -844,7 +844,7 @@ public class NovaVenda {
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -858,7 +858,7 @@ public class NovaVenda {
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -899,7 +899,7 @@ public class NovaVenda {
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -951,7 +951,7 @@ public class NovaVenda {
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(NovaVenda.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

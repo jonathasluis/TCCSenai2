@@ -72,7 +72,7 @@ public class Login {//
 	 */
 	private void initialize() {
 		frmLogin = new JFrame();
-		frmLogin.setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/libs/img/32x32.png")));
+		frmLogin.setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmLogin.setTitle("Login");
 		frmLogin.setBounds(100, 100, 400, 400);
 		frmLogin.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -197,14 +197,14 @@ public class Login {//
 		frmLogin.getContentPane().add(btnCadastrar);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(Login.class.getResource("/libs/img/128x128.png")));
+		label.setIcon(new ImageIcon(Login.class.getResource("/libs/img/libs/img/128x128.png")));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setFont(new Font("Tahoma", Font.BOLD, 16));
 		label.setBounds(10, 45, 374, 128);
 		frmLogin.getContentPane().add(label);
 		
 		JLabel lblFundo = new JLabel("");
-		lblFundo.setIcon(new ImageIcon(Login.class.getResource("/libs/img/fundo400.jpg")));
+		lblFundo.setIcon(new ImageIcon(Login.class.getResource("/libs/img/libs/img/fundo400.jpg")));
 		lblFundo.setBounds(0, 0, 394, 371);
 		frmLogin.getContentPane().add(lblFundo);
 		btnEntrar.addActionListener(new ActionListener() {
@@ -227,7 +227,7 @@ public class Login {//
 			JOptionPane.showMessageDialog(null, "Insira um usuario");
 			return;
 		}
-		JOptionPane.showMessageDialog(null, "logandooo");
+		
 
 		try {
 			PreparedStatement stmt = new Conexao().getConexao().prepareStatement(sql);
@@ -235,7 +235,7 @@ public class Login {//
 			rs = stmt.executeQuery();
 			stmt.execute();
 			stmt.close();
-			JOptionPane.showMessageDialog(null, "logandooo");
+			
 
 			if(rs.next()) {
 				String teste = rs.getString("usuario");

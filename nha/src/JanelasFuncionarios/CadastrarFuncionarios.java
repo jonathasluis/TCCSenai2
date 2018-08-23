@@ -138,7 +138,7 @@ public class CadastrarFuncionarios {
 		}//fim formatação mascara
 		
 		frmCadastrarFuncionarios = new JFrame();
-		frmCadastrarFuncionarios.setIconImage(Toolkit.getDefaultToolkit().getImage(CadastrarFuncionarios.class.getResource("/libs/img/32x32.png")));
+		frmCadastrarFuncionarios.setIconImage(Toolkit.getDefaultToolkit().getImage(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmCadastrarFuncionarios.setTitle("Cadastrar Funcionarios");
 		frmCadastrarFuncionarios.setBounds(100, 100, 1080, 720);
 		frmCadastrarFuncionarios.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -161,7 +161,7 @@ public class CadastrarFuncionarios {
 		
 		lblImagem = new JLabel("");
 		lblImagem.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		lblImagem.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/128x128.png")));
+		lblImagem.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/128x128.png")));
 		lblImagem.setToolTipText("Clique 2 vezes");
 		lblImagem.addMouseListener(new MouseAdapter() {//inicio evento para escolher e abrir imagem
 			@Override
@@ -726,11 +726,11 @@ public class CadastrarFuncionarios {
 		ftfPis.setBounds(600, 154, 150, 20);
 		frmCadastrarFuncionarios.getContentPane().add(ftfPis);
 		
-		ImageIcon icon = new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/teste13.jpg"));
+		ImageIcon icon = new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/t3.png"));
 		icon.setImage(icon.getImage().getScaledInstance( 53, 48, 100));
 		JLabel lblIcon = new JLabel("");
 		lblIcon.setBounds(997, 6, 53, 48);
-		lblIcon.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/t3.png")));
+		lblIcon.setIcon(icon);
 		frmCadastrarFuncionarios.getContentPane().add(lblIcon);
 		
 		lblSemdados = new JLabel("Sem dados salvos!");
@@ -740,8 +740,8 @@ public class CadastrarFuncionarios {
 		frmCadastrarFuncionarios.getContentPane().add(lblSemdados);
 		
 		JLabel lblFundo = new JLabel("PIS:");
-		lblFundo.setIcon(icon);
-		lblFundo.setBounds(0, -15, 1074, 670);
+		lblFundo.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/teste13.jpg")));
+		lblFundo.setBounds(0, -22, 1074, 670);
 		frmCadastrarFuncionarios.getContentPane().add(lblFundo);
 		
 		//tabela
@@ -948,7 +948,7 @@ public class CadastrarFuncionarios {
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -962,7 +962,7 @@ public class CadastrarFuncionarios {
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -1003,7 +1003,7 @@ public class CadastrarFuncionarios {
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -1055,7 +1055,7 @@ public class CadastrarFuncionarios {
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(CadastrarFuncionarios.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

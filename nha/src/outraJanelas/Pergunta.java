@@ -64,7 +64,7 @@ public class Pergunta {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Pergunta.class.getResource("/libs/img/32x32.png")));
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Pergunta.class.getResource("/libs/img/libs/img/32x32.png")));
 		frame.setResizable(false);
 		frame.setBounds(100, 100, 400, 400);
 		if(contador==0) {
@@ -124,14 +124,14 @@ public class Pergunta {
 		frame.getContentPane().add(btnCancelar);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(Pergunta.class.getResource("/libs/img/128x128.png")));
+		label.setIcon(new ImageIcon(Pergunta.class.getResource("/libs/img/libs/img/128x128.png")));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setFont(new Font("Tahoma", Font.BOLD, 16));
 		label.setBounds(10, 45, 374, 128);
 		frame.getContentPane().add(label);
 		
 		lblFundo = new JLabel("");
-		lblFundo.setIcon(new ImageIcon(Pergunta.class.getResource("/libs/img/fundo400.jpg")));
+		lblFundo.setIcon(new ImageIcon(Pergunta.class.getResource("/libs/img/libs/img/fundo400.jpg")));
 		lblFundo.setBounds(0, 0, 394, 371);
 		frame.getContentPane().add(lblFundo);
 		

@@ -130,7 +130,7 @@ public class CadastrarEspecie{
 		icon.setImage(icon.getImage().getScaledInstance(294, 121 ,100));
 		JLabel label = new JLabel("");
 		label.setBounds(0, 0, 294, 171);
-		label.setIcon(new ImageIcon(CadastrarEspecie.class.getResource("/libs/img/fundoPequeno.jpg")));
+		label.setIcon(new ImageIcon(CadastrarEspecie.class.getResource("/libs/img/libs/img/fundoPequeno.jpg")));
 		frmNovaEspecie.getContentPane().add(label);
 		frmNovaEspecie.setLocationRelativeTo(null);
 		

@@ -42,7 +42,6 @@ public class Principal {
 	public static JFrame frmPrincipal;
 	static JButton button;
 	public static Fazenda fazenda = new Fazenda();
-	private JLabel lblNomeDoSistema;
 	private JButton btnAnimais;
 	private JLabel lblAnimais;
 	private JButton btnFuncionarios;
@@ -102,7 +101,7 @@ public class Principal {
 	
 		frmPrincipal = new JFrame();
 		frmPrincipal.setType(Type.POPUP);
-		frmPrincipal.setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/libs/img/32x32.png")));
+		frmPrincipal.setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmPrincipal.setTitle("Principal");
 		frmPrincipal.setBounds(100, 100, 1080, 720);
 		frmPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -111,17 +110,9 @@ public class Principal {
 		frmPrincipal.getContentPane().setLayout(null);
 		
 		Pergunta.main(null);
-		Pergunta.contador = 0;	
+		Pergunta.contador = 0;
 		
-		lblNomeDoSistema = new JLabel("Nome do sistema");
-		lblNomeDoSistema.setBackground(Color.WHITE);
-		lblNomeDoSistema.setForeground(Color.DARK_GRAY);
-		lblNomeDoSistema.setFont(new Font("Tahoma", Font.BOLD, 25));
-		lblNomeDoSistema.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNomeDoSistema.setBounds(10, 11, 1054, 43);
-		frmPrincipal.getContentPane().add(lblNomeDoSistema);
-		
-		ImageIcon iconAnimal = new ImageIcon(Principal.class.getResource("/libs/img/vaca1.png"));
+		ImageIcon iconAnimal = new ImageIcon(Principal.class.getResource("/libs/img/libs/img/vaca1.png"));
 		iconAnimal.setImage(iconAnimal.getImage().getScaledInstance(135,101 ,100));
 		btnAnimais = new JButton("");
 		btnAnimais.setBorderPainted(false);
@@ -134,7 +125,7 @@ public class Principal {
 		});
 		btnAnimais.setContentAreaFilled(false);
 		btnAnimais.setBackground(Color.GRAY);
-		btnAnimais.setBounds(10, 104, 135,101);
+		btnAnimais.setBounds(12, 30, 135,101);
 		btnAnimais.setIcon(iconAnimal);
 		frmPrincipal.getContentPane().add(btnAnimais);
 		
@@ -142,10 +133,10 @@ public class Principal {
 		lblAnimais.setForeground(Color.DARK_GRAY);
 		lblAnimais.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblAnimais.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAnimais.setBounds(10, 206, 120, 14);
+		lblAnimais.setBounds(10, 132, 120, 14);
 		frmPrincipal.getContentPane().add(lblAnimais);
 		
-		ImageIcon iconFuncionarios = new ImageIcon(Principal.class.getResource("/libs/img/t3.png"));
+		ImageIcon iconFuncionarios = new ImageIcon(Principal.class.getResource("/libs/img/libs/img/t3.png"));
 		iconFuncionarios.setImage(iconFuncionarios.getImage().getScaledInstance(135, 101 ,100));
 		btnFuncionarios = new JButton("");
 		btnFuncionarios.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -158,7 +149,7 @@ public class Principal {
 			}
 		});
 		btnFuncionarios.setContentAreaFilled(false);
-		btnFuncionarios.setBounds(245, 104, 135,101);
+		btnFuncionarios.setBounds(245, 30, 135,101);
 		btnFuncionarios.setIcon(iconFuncionarios);
 		frmPrincipal.getContentPane().add(btnFuncionarios);
 		
@@ -166,10 +157,10 @@ public class Principal {
 		lblFuncionarios.setHorizontalAlignment(SwingConstants.CENTER);
 		lblFuncionarios.setForeground(Color.DARK_GRAY);
 		lblFuncionarios.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblFuncionarios.setBounds(255, 206, 120, 14);
+		lblFuncionarios.setBounds(255, 132, 120, 14);
 		frmPrincipal.getContentPane().add(lblFuncionarios);
 		//aa
-		ImageIcon iconCompras = new ImageIcon(Principal.class.getResource("/libs/img/compra12.png"));
+		ImageIcon iconCompras = new ImageIcon(Principal.class.getResource("/libs/img/libs/img/compra12.png"));
 		iconCompras.setImage(iconCompras.getImage().getScaledInstance(135,101 ,100));
 		btnCompras = new JButton("");
 		btnCompras.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -181,7 +172,7 @@ public class Principal {
 			}
 		});
 		btnCompras.setContentAreaFilled(false);
-		btnCompras.setBounds(470, 104, 135,101);
+		btnCompras.setBounds(470, 30, 135,101);
 		btnCompras.setIcon(iconCompras);
 		frmPrincipal.getContentPane().add(btnCompras);
 		
@@ -189,10 +180,10 @@ public class Principal {
 		lblCompras.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCompras.setForeground(Color.DARK_GRAY);
 		lblCompras.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblCompras.setBounds(470, 207, 120, 14);
+		lblCompras.setBounds(470, 133, 120, 14);
 		frmPrincipal.getContentPane().add(lblCompras);
 		
-		ImageIcon iconVendas = new ImageIcon(Principal.class.getResource("/libs/img/t1.png"));
+		ImageIcon iconVendas = new ImageIcon(Principal.class.getResource("/libs/img/libs/img/t1.png"));
 		iconVendas.setImage(iconVendas.getImage().getScaledInstance(135,101 ,100));
 		btnVendas = new JButton("");
 		btnVendas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -204,7 +195,7 @@ public class Principal {
 			}
 		});
 		btnVendas.setContentAreaFilled(false);
-		btnVendas.setBounds(700, 104, 135,101);
+		btnVendas.setBounds(700, 30, 135,101);
 		btnVendas.setIcon(iconVendas);
 		frmPrincipal.getContentPane().add(btnVendas);
 		
@@ -212,10 +203,10 @@ public class Principal {
 		lblVendas.setHorizontalAlignment(SwingConstants.CENTER);
 		lblVendas.setForeground(Color.DARK_GRAY);
 		lblVendas.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblVendas.setBounds(700, 207, 120, 14);
+		lblVendas.setBounds(698, 133, 120, 14);
 		frmPrincipal.getContentPane().add(lblVendas);
 		
-		ImageIcon iconUsuario = new ImageIcon(Principal.class.getResource("/libs/img/usu1.png"));
+		ImageIcon iconUsuario = new ImageIcon(Principal.class.getResource("/libs/img/libs/img/usu1.png"));
 		iconUsuario.setImage(iconUsuario.getImage().getScaledInstance(135,101 ,100));
 		btnUsuario = new JButton("");
 		btnUsuario.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -227,7 +218,7 @@ public class Principal {
 			}
 		});
 		btnUsuario.setContentAreaFilled(false);
-		btnUsuario.setBounds(920, 104, 135,101);
+		btnUsuario.setBounds(918, 30, 135,101);
 		btnUsuario.setIcon(iconUsuario);
 		frmPrincipal.getContentPane().add(btnUsuario);
 		
@@ -235,7 +226,7 @@ public class Principal {
 		lblUsuario.setHorizontalAlignment(SwingConstants.CENTER);
 		lblUsuario.setForeground(Color.DARK_GRAY);
 		lblUsuario.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblUsuario.setBounds(920, 207, 120, 14);
+		lblUsuario.setBounds(918, 133, 120, 14);
 		frmPrincipal.getContentPane().add(lblUsuario);
 		
 		panelSite = new JPanel();
@@ -261,9 +252,9 @@ public class Principal {
 		iconSite.setImage(iconSite.getImage().getScaledInstance(40, 40 ,100));
 		lblImgSite = new JLabel("");
 		panelSite.add(lblImgSite, BorderLayout.WEST);
-		lblImgSite.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/icons8-dom\u00EDnio-48.png")));
+		lblImgSite.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/www.png")));
 		
-		lblSite = new JLabel("  www.fodase.com");
+		lblSite = new JLabel("  www.gan.com");
 		panelSite.add(lblSite, BorderLayout.CENTER);
 		
 		panelPdf = new JPanel();
@@ -289,7 +280,7 @@ public class Principal {
 		iconPdf.setImage(iconPdf.getImage().getScaledInstance(40, 40, 100));
 		lblImgPdf = new JLabel("");
 		panelPdf.add(lblImgPdf, BorderLayout.WEST);
-		lblImgPdf.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/icons8-pdf-64.png")));
+		lblImgPdf.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/pdf.png")));
 		
 		lblManual = new JLabel("  Manual");
 		panelPdf.add(lblManual, BorderLayout.CENTER);
@@ -307,9 +298,15 @@ public class Principal {
 		lblNewLabel.setBounds(10, 590, 1054, 29);
 		frmPrincipal.getContentPane().add(lblNewLabel);
 		
+		JLabel label = new JLabel("");
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setIcon(new ImageIcon(Principal.class.getResource("/libs/logo Principal.png")));
+		label.setBounds(10, 233, 1054, 300);
+		frmPrincipal.getContentPane().add(label);
+		
 		foto = new JLabel("");
 		foto.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		foto.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/teste2.jpg")));
+		foto.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/teste2.jpg")));
 		foto.setFont(new Font("Tahoma", Font.BOLD, 11));
 		foto.setForeground(Color.WHITE);
 		foto.setBorder(null);
@@ -332,7 +329,7 @@ public class Principal {
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -346,7 +343,7 @@ public class Principal {
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -387,7 +384,7 @@ public class Principal {
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -439,7 +436,7 @@ public class Principal {
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(Principal.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);
@@ -504,6 +501,6 @@ public class Principal {
 		
 		mnOpes.add(mntmSada);
 		frmPrincipal.getContentPane().setLayout(null);
-		frmPrincipal.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{frmPrincipal.getContentPane(), lblNomeDoSistema, btnAnimais, lblAnimais, btnFuncionarios, lblFuncionarios, btnCompras, lblCompras, btnVendas, lblVendas, btnUsuario, lblUsuario, panelSite, lblImgSite, lblSite, panelPdf, lblImgPdf, lblManual, lblVersao, lblNewLabel, foto, menuBar, mnInicio, mnNewMenu, mntmCadastrarAnimais, mntmCadastrarFuncionarios, mnNewMenu_1, mntmCompra, mntmNovaVenda, mntmTotal, mnOpes, mntmNovaFazenda, mntmMudarFazenda, mntmDeslogar, mntmSada}));
+		frmPrincipal.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{frmPrincipal.getContentPane(), btnAnimais, lblAnimais, btnFuncionarios, lblFuncionarios, btnCompras, lblCompras, btnVendas, lblVendas, btnUsuario, lblUsuario, panelSite, lblImgSite, lblSite, panelPdf, lblImgPdf, lblManual, lblVersao, lblNewLabel, foto, menuBar, mnInicio, mnNewMenu, mntmCadastrarAnimais, mntmCadastrarFuncionarios, mnNewMenu_1, mntmCompra, mntmNovaVenda, mntmTotal, mnOpes, mntmNovaFazenda, mntmMudarFazenda, mntmDeslogar, mntmSada}));
 	}
 }

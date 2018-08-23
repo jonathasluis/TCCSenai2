@@ -139,9 +139,9 @@ public class NovaRaca {
 		ImageIcon icon = new ImageIcon("/img/gradiente_Branco.jpg");
 		icon.setImage(icon.getImage().getScaledInstance(294, 171 ,100));
 		JLabel label = new JLabel("");
-		label.setBounds(0, 0, 294, 171);
+		label.setBounds(0, 0, 294, 176);
 		frmNovaRaca.getContentPane().add(label);
-		label.setIcon(new ImageIcon(NovaRaca.class.getResource("/libs/img/fundoPequeno.jpg")));
+		label.setIcon(new ImageIcon(NovaRaca.class.getResource("/libs/img/libs/img/fundoPequeno.jpg")));
 		
 		
 		comboBoxEspecie();

@@ -107,7 +107,7 @@ public class NovaCompra {////
 		
 		
 		frmCompraDeInsumos = new JFrame();
-		frmCompraDeInsumos.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaCompra.class.getResource("/libs/img/32x32.png")));
+		frmCompraDeInsumos.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaCompra.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmCompraDeInsumos.setTitle("Compra de Insumos");
 		frmCompraDeInsumos.setBounds(100, 100, 1080, 720);
 		frmCompraDeInsumos.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -536,7 +536,7 @@ public class NovaCompra {////
 		scrollPane.setViewportView(table);
 		
 		//IMAGEICON PARA COLOCAR IMAGEM NA TELA E REDIMENSIONAR 
-		ImageIcon icon = new ImageIcon(NovaCompra.class.getResource("/libs/img/compra12.png"));
+		ImageIcon icon = new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/compra12.png"));
 		icon.setImage(icon.getImage().getScaledInstance(46, 48, 100));
 		JLabel llll = new JLabel("");
 		llll.setBounds(1004, 6, 46, 48);
@@ -588,9 +588,9 @@ public class NovaCompra {////
 		
 		JLabel label = new JLabel("");
 		label.setBackground(new Color(245, 245, 245));
-		label.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/teste13.jpg")));
+		label.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/teste13.jpg")));
 		//label.setIcon(img);
-		label.setBounds(0, -17, 1074, 671);
+		label.setBounds(0, -22, 1074, 671);
 		frmCompraDeInsumos.getContentPane().add(label);
 		
 		
@@ -698,7 +698,7 @@ public class NovaCompra {////
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -712,7 +712,7 @@ public class NovaCompra {////
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -753,7 +753,7 @@ public class NovaCompra {////
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -805,7 +805,7 @@ public class NovaCompra {////
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(NovaCompra.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

@@ -61,7 +61,7 @@ public class NovoUsuario {///
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(NovoUsuario.class.getResource("/libs/img/32x32.png")));
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(NovoUsuario.class.getResource("/libs/img/libs/img/32x32.png")));
 		frame.setBounds(100, 100, 400, 400);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
@@ -69,7 +69,7 @@ public class NovoUsuario {///
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblLogo = new JLabel("");
-		lblLogo.setIcon(new ImageIcon(NovoUsuario.class.getResource("/libs/img/128x128.png")));
+		lblLogo.setIcon(new ImageIcon(NovoUsuario.class.getResource("/libs/img/libs/img/128x128.png")));
 		lblLogo.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblLogo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblLogo.setBounds(10, 45, 374, 128);
@@ -225,7 +225,7 @@ public class NovoUsuario {///
 		frame.getContentPane().add(lblNovoUsuario);
 		
 		JLabel lblFundo = new JLabel("");
-		lblFundo.setIcon(new ImageIcon(NovoUsuario.class.getResource("/libs/img/fundo400.jpg")));
+		lblFundo.setIcon(new ImageIcon(NovoUsuario.class.getResource("/libs/img/libs/img/fundo400.jpg")));
 		lblFundo.setBounds(0, 0, 394, 371);
 		frame.getContentPane().add(lblFundo);
 	}

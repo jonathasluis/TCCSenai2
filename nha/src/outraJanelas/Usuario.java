@@ -89,7 +89,7 @@ public class Usuario {
 	 */
 	private void initialize() {
 		frmUsuario = new JFrame();
-		frmUsuario.setIconImage(Toolkit.getDefaultToolkit().getImage(Usuario.class.getResource("/libs/img/32x32.png")));
+		frmUsuario.setIconImage(Toolkit.getDefaultToolkit().getImage(Usuario.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmUsuario.setTitle("Cadastrar Funcionarios");
 		frmUsuario.setBounds(100, 100, 1080, 720);
 		frmUsuario.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -98,7 +98,7 @@ public class Usuario {
 		frmUsuario.getContentPane().setLayout(null);
 		
 		
-		ImageIcon icon = new ImageIcon(Usuario.class.getResource("/libs/img/usu1.png"));
+		ImageIcon icon = new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/usu1.png"));
 		icon.setImage(icon.getImage().getScaledInstance( 53, 48, 100));
 		JLabel lblIcon = new JLabel("");
 		lblIcon.setBounds(997, 6, 53, 48);
@@ -381,8 +381,8 @@ public class Usuario {
 		
 		
 		JLabel label_1 = new JLabel("");
-		label_1.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/teste13.jpg")));
-		label_1.setBounds(0, -24, 1074, 670);
+		label_1.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/teste13.jpg")));
+		label_1.setBounds(0, -23, 1074, 670);
 		frmUsuario.getContentPane().add(label_1);
 		
 		
@@ -432,7 +432,7 @@ public class Usuario {
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -446,7 +446,7 @@ public class Usuario {
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -487,7 +487,7 @@ public class Usuario {
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -539,7 +539,7 @@ public class Usuario {
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(Usuario.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

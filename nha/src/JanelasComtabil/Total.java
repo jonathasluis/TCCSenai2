@@ -110,7 +110,7 @@ public class Total {//
 		
 		frmRelattio = new JFrame();
 		frmRelattio.setTitle("Relat\u00F3tio");
-		frmRelattio.setIconImage(Toolkit.getDefaultToolkit().getImage(Total.class.getResource("/libs/img/32x32.png")));
+		frmRelattio.setIconImage(Toolkit.getDefaultToolkit().getImage(Total.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmRelattio.setBounds(100, 100, 1080, 720);
 		frmRelattio.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frmRelattio.setResizable(false);
@@ -119,7 +119,7 @@ public class Total {//
 		
 		frmRelattio.getContentPane().setLayout(null);
 		
-		ImageIcon icon = new ImageIcon(Total.class.getResource("/libs/img/relatio.png"));
+		ImageIcon icon = new ImageIcon(Total.class.getResource("/libs/img/libs/img/relatio.png"));
 		icon.setImage(icon.getImage().getScaledInstance(44, 40, 100));
 		JLabel lblIcone = new JLabel("");
 		lblIcone.setBounds(1006, 6, 44, 40);
@@ -514,8 +514,8 @@ public class Total {//
 		frmRelattio.getContentPane().add(lblSemdados2);
 		
 		JLabel label_1 = new JLabel("");
-		label_1.setIcon(new ImageIcon(Total.class.getResource("/libs/img/teste13.jpg")));
-		label_1.setBounds(0, -15, 1074, 670);
+		label_1.setIcon(new ImageIcon(Total.class.getResource("/libs/img/libs/img/teste13.jpg")));
+		label_1.setBounds(0, -19, 1074, 670);
 		frmRelattio.getContentPane().add(label_1);
 		
 		compras.setIdFazenda(Principal.fazenda.getIdFazenda());
@@ -683,7 +683,7 @@ public class Total {//
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(Total.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(Total.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -697,7 +697,7 @@ public class Total {//
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(Total.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(Total.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -738,7 +738,7 @@ public class Total {//
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(Total.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(Total.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -790,7 +790,7 @@ public class Total {//
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(Total.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(Total.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

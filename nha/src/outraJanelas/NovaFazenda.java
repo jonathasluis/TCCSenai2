@@ -108,7 +108,7 @@ public class NovaFazenda {
 	 */
 	private void initialize() {
 		frmNovaFazenda = new JFrame();
-		frmNovaFazenda.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaFazenda.class.getResource("/libs/img/32x32.png")));
+		frmNovaFazenda.setIconImage(Toolkit.getDefaultToolkit().getImage(NovaFazenda.class.getResource("/libs/img/libs/img/32x32.png")));
 		frmNovaFazenda.setTitle("Nova Fazenda");
 		frmNovaFazenda.setBounds(100, 100, 1080,720);
 		frmNovaFazenda.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -139,7 +139,7 @@ public class NovaFazenda {
 			}
 		});
 		lblImg.setHorizontalAlignment(SwingConstants.CENTER);
-		lblImg.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/128x128.png")));
+		lblImg.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/128x128.png")));
 		panel.add(lblImg, "name_20449716211995");
 		
 		JButton btnSalvar = new JButton("Salvar");
@@ -473,18 +473,18 @@ public class NovaFazenda {
 		scrollPane_1.setViewportView(taDescricao);
 		
 		JLabel lblFUN = new JLabel("");
-		lblFUN.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/32x32Fun.png")));
+		lblFUN.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/32x32Fun.png")));
 		lblFUN.setBounds(286, 209, 32, 37);
 		frmNovaFazenda.getContentPane().add(lblFUN);
 		
 		JLabel lblVACA = new JLabel("");
-		lblVACA.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/32x32Vaca.png")));
+		lblVACA.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/32x32Vaca.png")));
 		lblVACA.setBounds(286, 167, 32, 43);
 		frmNovaFazenda.getContentPane().add(lblVACA);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/teste13.jpg")));
-		label.setBounds(0, -18, 1074, 670);
+		label.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/teste13.jpg")));
+		label.setBounds(0, -22, 1074, 670);
 		frmNovaFazenda.getContentPane().add(label);
 		
 		//tabela
@@ -636,7 +636,7 @@ public class NovaFazenda {
 		mnInicio.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mnInicio.setOpaque(true);
 		mnInicio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		mnInicio.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/Icone_Inicio.png")));
+		mnInicio.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/Icone_Inicio.png")));
 		mnInicio.setForeground(Color.WHITE);
 		mnInicio.setBackground(Color.DARK_GRAY);
 		mnInicio.addMouseListener(new MouseAdapter() {
@@ -650,7 +650,7 @@ public class NovaFazenda {
 		
 		JMenu mnNewMenu = new JMenu("");
 		mnNewMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/Icone_GEstao.png")));
+		mnNewMenu.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/Icone_GEstao.png")));
 		mnNewMenu.setOpaque(true);
 		mnNewMenu.setFocusPainted(true);
 		mnNewMenu.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64), new Color(64, 64, 64)));
@@ -691,7 +691,7 @@ public class NovaFazenda {
 		mnNewMenu_1.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		
 		mnNewMenu_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnNewMenu_1.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/Icone_Financeiro.png")));
+		mnNewMenu_1.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/Icone_Financeiro.png")));
 		mnNewMenu_1.setForeground(Color.WHITE);
 		mnNewMenu_1.setBackground(Color.DARK_GRAY);
 		mnNewMenu_1.setOpaque(true);
@@ -743,7 +743,7 @@ public class NovaFazenda {
 		JMenu mnOpes = new JMenu("");
 		mnOpes.setBorder(new SoftBevelBorder(BevelBorder.RAISED, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY, Color.DARK_GRAY));
 		mnOpes.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		mnOpes.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/Icone_OPCAO.png")));
+		mnOpes.setIcon(new ImageIcon(NovaFazenda.class.getResource("/libs/img/libs/img/Icone_OPCAO.png")));
 		mnOpes.setForeground(Color.WHITE);
 		mnOpes.setBackground(Color.DARK_GRAY);
 		mnOpes.setOpaque(true);

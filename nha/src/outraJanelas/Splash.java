@@ -48,9 +48,9 @@ public class Splash {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Splash.class.getResource("/libs/img/32x32.png")));
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Splash.class.getResource("/libs/img/libs/img/32x32.png")));
 		frame.setResizable(false);
-		frame.setBounds(100, 100, 420, 250);
+		frame.setBounds(100, 100, 430, 230);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setUndecorated(true); //tirar os botoes de cima e a borda
 		frame.getContentPane().setBackground(new Color(1.0f,1.0f,1.0f,0.0f)); //tranparente
@@ -79,19 +79,19 @@ public class Splash {
 		lblX.setBounds(391, 11, 19, 14);
 		frame.getContentPane().add(lblX);
 		
-		progressBar = new JProgressBar();
-		progressBar.setOpaque(true);
-		progressBar.setBounds(0, 238, 420, 12);
-		progressBar.setForeground(new Color(102, 204, 51));
-		progressBar.setStringPainted(true);
-		progressBar.setMaximum(70);
-		frame.getContentPane().add(progressBar);
-		
 		ImageIcon iconAnimal = new ImageIcon("/img/gradiente_Branco.jpg");
 		iconAnimal.setImage(iconAnimal.getImage().getScaledInstance(420, 250 ,100));
+		
+		progressBar = new JProgressBar();
+		progressBar.setOpaque(true);
+		progressBar.setBounds(0, 210, 430, 12);
+		progressBar.setForeground(new Color(102, 204, 51));
+		progressBar.setStringPainted(true);
+		progressBar.setMaximum(30);
+		frame.getContentPane().add(progressBar);
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(Splash.class.getResource("/libs/img/128x128.png")));
-		label.setBounds(0, 0, 420, 250);
+		label.setIcon(new ImageIcon(Splash.class.getResource("/libs/img/libs/img/128x128.png")));
+		label.setBounds(0, 0, 410, 218);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		frame.getContentPane().add(label);
 		
@@ -108,7 +108,7 @@ public class Splash {
 					Thread.sleep(100);
 					 x++;
 					 progressBar.setValue(x);
-					 if(x==70) {
+					 if(x==30) {
 						 break;
 					 }
 				}
