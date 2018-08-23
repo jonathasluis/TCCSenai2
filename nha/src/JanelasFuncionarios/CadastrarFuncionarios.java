@@ -42,7 +42,6 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.MaskFormatter;
 
-import DAO.Animal;
 import DAO.Funcionario;
 import Imagem.MetodosImagem;
 import JanelasAnimal.CadastrarAnimais;
@@ -455,7 +454,7 @@ public class CadastrarFuncionarios {
 						int x2 = 23;
 						scrollPane.setBounds(10, 253, 1054, x2);
 							new CrudFuncionarios();
-							colocaDadosNaTabela(new CrudFuncionarios().selecionaFuncionario(DAOFuncionario));
+							colocaDadosNaTabela(CrudFuncionarios.selecionaFuncionario(DAOFuncionario));
 					
 						
 					}

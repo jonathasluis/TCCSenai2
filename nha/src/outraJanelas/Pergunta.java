@@ -159,6 +159,15 @@ public class Pergunta {
 					edit.setDescricao(dados1.getString("descri"));
 					edit.setImg(dados1.getBytes("img"));
 					Principal.fazenda = edit;
+				}else {
+					edit.setIdFazenda(0);
+					edit.setNome(null);
+					edit.setTamanho(null);
+					edit.setProprietario(null);
+					edit.setEscritura(null);
+					edit.setDescricao(null);
+					edit.setImg(null);
+					Principal.fazenda = edit;
 				}
 				
 			} catch (SQLException e) {

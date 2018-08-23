@@ -120,7 +120,7 @@ public class NovoUsuario {///
 					tfUsuario.requestFocus();
 					return;
 				}
-				if (tfEmail.getText().trim().equals("")) {
+				if (!(tfEmail.getText().contains("@") && tfEmail.getText().contains(".com"))) {
 					JOptionPane.showMessageDialog(null, "Informe um e-mail válida","ALERTA!",JOptionPane.WARNING_MESSAGE);
 					tfUsuario.requestFocus();
 					return;
