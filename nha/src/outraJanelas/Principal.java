@@ -28,7 +28,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.SoftBevelBorder;
 
-import org.eclipse.wb.swing.FocusTraversalOnArray;
+//import org.eclipse.wb.swing.FocusTraversalOnArray;
 
 import DAO.Fazenda;
 import JanelasAnimal.CadastrarAnimais;
@@ -506,6 +506,6 @@ public class Principal {
 		
 		mnOpes.add(mntmSada);
 		frmPrincipal.getContentPane().setLayout(null);
-		frmPrincipal.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{frmPrincipal.getContentPane(), btnAnimais, lblAnimais, btnFuncionarios, lblFuncionarios, btnCompras, lblCompras, btnVendas, lblVendas, btnUsuario, lblUsuario, panelSite, lblImgSite, lblSite, panelPdf, lblImgPdf, lblManual, lblVersao, lblNewLabel, foto, menuBar, mnInicio, mnNewMenu, mntmCadastrarAnimais, mntmCadastrarFuncionarios, mnNewMenu_1, mntmCompra, mntmNovaVenda, mntmTotal, mnOpes, mntmNovaFazenda, mntmMudarFazenda, mntmDeslogar, mntmSada}));
+		//frmPrincipal.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{frmPrincipal.getContentPane(), btnAnimais, lblAnimais, btnFuncionarios, lblFuncionarios, btnCompras, lblCompras, btnVendas, lblVendas, btnUsuario, lblUsuario, panelSite, lblImgSite, lblSite, panelPdf, lblImgPdf, lblManual, lblVersao, lblNewLabel, foto, menuBar, mnInicio, mnNewMenu, mntmCadastrarAnimais, mntmCadastrarFuncionarios, mnNewMenu_1, mntmCompra, mntmNovaVenda, mntmTotal, mnOpes, mntmNovaFazenda, mntmMudarFazenda, mntmDeslogar, mntmSada}));
 	}
 }
